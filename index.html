@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form Validation</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        textarea{
+            border-radius: 15px;
+            background-color: rgb(37, 19, 19);
+            font-size: large;
+            color: white;
+            text-align: left;
+        }
+       
+    </style>
+</head>
+
+    <h1>Form For Submitting Input fields</h1>
+    <form action="post" style="text-align: center;">
+
+        <div> <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" name="username" autofocus>
+            <label for="Password">Password</label>
+            <input type="password" id="pass" placeholder="Enter your Password" name="pass" autofocus>
+        </div>
+       
+       <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="male">Female</label>
+       </div>
+       <div>
+        <input type="checkbox" id="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label>
+       </div>
+       <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment" rows="20" cols="50">
+            </textarea>
+            
+            
+        </div>
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="banana">Banana</option>
+                <option value="Apple">Apple</option>
+                <option value="Grapes">Grapes</option>
+            </select>
+            
+        </div>
+
+    </form>
+    <footer style="padding-top: 40px;">
+        <address style="text-align: center;">
+            Hamza Zahid
+        </address>
+    </footer>
+    
+</body>
+</html>
